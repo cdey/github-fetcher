@@ -1,0 +1,8 @@
+DROP DATABASE IF EXISTS github;
+
+CREATE DATABASE github;
+
+USE github;
+
+CREATE TABLE repos (
+);

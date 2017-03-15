@@ -37,15 +37,15 @@ You are building an app that takes data from GitHub's API and stores it in your 
 
 ## Basic Requirements:
 
-- [ ] Draw a diagram showing how this app works. Make sure your diagram includes the client, the server, and the database. 
+- [x ] Draw a diagram showing how this app works. Make sure your diagram includes the client, the server, and the database. 
 
-- [ ] Explain your diagram to another human, and then to a Tech Mentor (may be a robot). 
+- [ x] Explain your diagram to another human, and then to a Tech Mentor (may be a robot). 
 
-- [ ] Design (draw a schema) a `repos` table. You can look at `data.json` to see the structure of the data from the github api. What columns will you need? Once you've figured out your schema, complete the schema.sql file. 
+- [x ] Design (draw a schema) a `repos` table. You can look at `data.json` to see the structure of the data from the github api. What columns will you need? Once you've figured out your schema, complete the schema.sql file. 
 
-- [ ] Explain your schema to another human, and then to a Tech Mentor.
+- [x ] Explain your schema to another human, and then to a Tech Mentor.
 
-- [ ] When a user types a github username into the text field, use jQuery's ajax method to send a POST request to /repos/import (you'll have to fix the bug in the Search Component first).
+- [x ] When a user types a github username into the text field, use jQuery's ajax method to send a POST request to /repos/import (you'll have to fix the bug in the Search Component first).     
 
 - [ ] Complete the `repos/import` route on your express server - in this route, you'll use the npm request library to fetch that user's Github repositories from the [Github API](https://developer.github.com/v3/).
 

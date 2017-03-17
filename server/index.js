@@ -32,6 +32,12 @@ app.post('/repos/import', function (req, res) {
 });
 
 app.get('/repos', function (req, res) {
+  connection.query('SELECT * from repos', function(err, results, fields) {
+    if (err) {
+      console.log('error',err)
+    }
+    res.send(results);
+  })
 });
 
 var port = 1128;

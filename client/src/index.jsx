@@ -10,7 +10,24 @@ class App extends React.Component {
     this.state = { 
       repos: []
     }
+  }
 
+  getRepos () {
+    var context = this;
+    $.ajax({
+      url: '/repos',
+      method: 'GET',
+      success: function(data) {
+        console.log('data', data);
+        context.setState({
+          repos: data.body
+        });
+      },
+      error: function() {
+        console.log('error');
+
+      }
+    })
   }
 
   search (term) {
@@ -26,6 +43,7 @@ class App extends React.Component {
       data: JSON.stringify(data),
       success: function() {
         console.log('post request worked');
+        this.getRepos().bind(this);
       },
       error: function() {
         console.log('error');
